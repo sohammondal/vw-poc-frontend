@@ -19,7 +19,7 @@ class AssetData extends Component{
         console.log('this.props',this.props);
         return(
             <div>
-                AssetDataComp
+                AssetDataCompUpdate
             </div>
         )
     }
