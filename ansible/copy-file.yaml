@@ -7,5 +7,5 @@
   tasks:
   - name: Copy file from src to dest
     synchronize:
-      src: /var/jenkins_home/workspace/VeoliaWatersFrontend/build/
+      src: /var/jenkins_home/workspace/VeoliaWatersFrontend/frontend/build/
       dest: /var/www/html/
