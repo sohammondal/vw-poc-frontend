@@ -5,3 +5,4 @@ id2=$(aws cloudfront create-invalidation --paths /*  --distribution-id $dist2 --
 aws cloudfront wait invalidation-completed --distribution-id $dist1 --profile VeoliaWaters --id $id1
 aws cloudfront wait invalidation-completed --distribution-id $dist2 --profile VeoliaWaters --id $id2
 echo 'CDN has been updated.'
+#cdn update
