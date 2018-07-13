@@ -22,8 +22,7 @@ class AssetData extends Component{
     }
    
                     
-
-    componentDidMount(){
+componentDidMount(){
         this.getAssetData();
     }
 
@@ -86,6 +85,7 @@ class AssetData extends Component{
             
         )
     }
+   
 }
 
 
