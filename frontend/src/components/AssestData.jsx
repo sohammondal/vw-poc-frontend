@@ -76,17 +76,12 @@ class AssetData extends Component{
        // console.log(this.state.asset_data.message.DSTRCT_CODE);
         
         return(
-<<<<<<< HEAD
-            <div>
-                AssetDataCompUpdate
-=======
             
             <div> 
 
                {
                    this.renderData()
                }
->>>>>>> origin/frontend2
             </div>
             
         )
