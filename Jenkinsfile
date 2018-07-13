@@ -22,7 +22,7 @@ pipeline{
         stage('Code Analysis'){
             steps{
                 //def sonarqubeScannerHome = tool name: 'Sonarcube', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
-                sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/Sonarcube/bin/sonar-scanner -e -Dsonar.host.url=${env.SonarURL} -Dsonar.login=${env.SonarUsername} -Dsonar.password=${env.SonarPassword} -Dproject.settings=/var/jenkins_home/workspace/VeoliaWatersFrontend/frontend/build "-Dsonar.projectName=VW-POC Frontend" -Dsonar.projectVersion=1.0 -Dsonar.projectKey=VW-POC:Frontend -Dsonar.sources=build/ -Dsonar.projectBaseDir=/var/jenkins_home/workspace/VeoliaWatersFrontend"
+                sh "/var/jenkins_home/tools/hudson.plugins.sonar.SonarRunnerInstallation/Sonarcube/bin/sonar-scanner -e -Dsonar.host.url=${env.SonarURL} -Dsonar.login=${env.SonarUsername} -Dsonar.password=${env.SonarPassword} -Dproject.settings=/var/jenkins_home/workspace/VeoliaWatersFrontend/frontend/build \"-Dsonar.projectName=VW-POC Frontend\" -Dsonar.projectVersion=1.0 -Dsonar.projectKey=VW-POC:Frontend -Dsonar.sources=build/ -Dsonar.projectBaseDir=/var/jenkins_home/workspace/VeoliaWatersFrontend"
             }
         }
         stage('Unit Test'){
