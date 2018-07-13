@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="VM-POC-TEST"
+    errors="1" failures="0" hostname="" id="" package="VM-POC-TEST" skipped="0"
+    tests="1" time="0.005000" timestamp="Fri, 13 Jul 2018 09:11:43 GMT">
+  
+    <testcase name="Testing started" classname="VM-POC-TEST" time="0.005000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [VM POC TEST / Testing started]:
+
+  TypeError: browser.assert.setValue is not a function
+    at Object.Testing started (D:\Rooj Omiyo\vw-poc-frontend\frontend\test\tests\VM-POC-TEST.js:8:23)
+    at Module.call (D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\q\q.js:796:13)
+    at D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\q\q.js:556:49
+    at runSingle (D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\q\q.js:137:13)
+    at flush (D:\Rooj Omiyo\vw-poc-frontend\frontend\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

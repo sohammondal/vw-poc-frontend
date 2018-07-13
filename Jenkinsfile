@@ -40,7 +40,7 @@ pipeline{
                         cd frontend
                         npm install
                         cd test
-                        node nightwatch.js -e chrome -a google
+                        node nightwatch.js -e chrome -a VW-POC-TEST
                     '''
             }
         }

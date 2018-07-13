@@ -39,7 +39,7 @@ class Dropdown extends Component{
         const { asset_data } = this.state;
         //console.log(asset_data);
         return ( 
-            <select className="form-control" id="sel1" onChange={ event => {
+            <select className="form-control" name="sel1" id="sel1" onChange={ event => {
                 //console.log(event.target.value)
                 event.target.value==='' ? this.setState({isOptionSelected:false,equip_no:null}) : this.setState({isOptionSelected:true,equip_no:event.target.value})
             }
