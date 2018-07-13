@@ -86,7 +86,6 @@ class AssetData extends Component{
             
         )
     }
-   
 }
 
 
