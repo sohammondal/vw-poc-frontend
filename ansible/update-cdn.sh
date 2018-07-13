@@ -1,4 +1,3 @@
-ssh ec2-user@35.177.21.226
 usDist=E6C5IVF7KYD9P
 ukDist=E2RH2JBC3UI9WB
 echo 'US Dist' $usDist

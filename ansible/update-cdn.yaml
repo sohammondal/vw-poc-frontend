@@ -1,0 +1,11 @@
+---
+- hosts: 35.177.21.226
+  gather_facts: false
+    become: true
+    remote_user: ec2-user
+    become_user: root
+    tasks:
+    - name: Transfer the script
+       copy: src=update-cdn.sh dest=/home/ec2-user mode=0777
+    - name: Execute the script
+       command: sh /home/ec2-user/update-cdn.sh
