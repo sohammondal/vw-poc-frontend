@@ -3,7 +3,7 @@ module.exports = {
    'Testing started' : function(browser)
    {
        browser
-       .url('http://localhost:3006/')
+       .url('http://ec2-54-218-152-159.us-west-2.compute.amazonaws.com/')
        .verify.title('App')
        .click('select[name="sel1"] option').pause(500)      
        .click('select[name="sel1"] option[value="0000000000GS1"]').pause(4000).saveScreenshot('./screenshots/Chrome/0000000000GS1.png')

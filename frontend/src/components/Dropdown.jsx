@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import AssetData from './AssestData';
+import SesnorData from './SensorData';
+import AlarmData from './AlarmData';
 
 
 class Dropdown extends Component{
@@ -31,8 +33,19 @@ class Dropdown extends Component{
     renderAssetData(){
         return(
 
-            this.state.equip_no!=null ? <AssetData equip_no={this.state.equip_no}/> : null
+            this.state.equip_no!=null ? 
+            <div> 
+                <AssetData equip_no={this.state.equip_no}/> 
+                <SesnorData equip_no={this.state.equip_no}/> 
+                <AlarmData equip_no={this.state.equip_no}/> 
+            </div> : null
         )
+    }
+    chnageState(val){
+        this.setState({isOptionSelected:false,equip_no:null})
+        setTimeout(() => {
+            this.setState({isOptionSelected:true,equip_no:val})
+        }, 250);
     }
 
     populateDropdown(){
@@ -40,11 +53,16 @@ class Dropdown extends Component{
         //console.log(asset_data);
         return ( 
             <select className="form-control" name="sel1" id="sel1" onChange={ event => {
-                //console.log(event.target.value)
-                event.target.value==='' ? this.setState({isOptionSelected:false,equip_no:null}) : this.setState({isOptionSelected:true,equip_no:event.target.value})
+                // console.log(event.target.value)
+                // console.log(this.state);
+                
+                event.target.value==='' ? this.setState({isOptionSelected:false,equip_no:null}) : 
+                event.target.value!=this.state.equip_no ? this.chnageState(event.target.value) : null
+                
+
             }
             }>
-                <option></option>
+                <option value=''>Select Equiment Number</option>
                    { asset_data.map( (asset) => {
                         return(<option value={asset.EQUIP_NO} key={asset.EQUIP_NO} >{asset.EQUI_INFO}</option>)
                    } ) }
@@ -60,12 +78,13 @@ class Dropdown extends Component{
         
         return(
             <div>
-                <div className="form-group">
-                    <label htmlFor="sel1">Select Asset Data:</label>
+                <div className="form-group my-select">
+                    {/* <label htmlFor="sel1">Select Asset Data:</label> */}
                     
                     { this.state.isLoaded ? this.populateDropdown() : <div>Loading...</div>}
-                    { this.state.isOptionSelected ? this.renderAssetData() : null }
+                    
                 </div>
+                <div>{ this.state.isOptionSelected ? this.renderAssetData() : null }</div>
                 
             </div>
         )

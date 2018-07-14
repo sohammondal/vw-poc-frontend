@@ -19,7 +19,7 @@ class App extends Component {
                 <h1>Veolia Water AquaVista Portal Demo 13.7.2018</h1>
 
                     
-                     <Dropdown />
+                    <Dropdown />
                
             </div>
         );
