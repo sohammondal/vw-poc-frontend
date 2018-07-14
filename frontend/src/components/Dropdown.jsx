@@ -34,7 +34,7 @@ class Dropdown extends Component{
         return(
 
             this.state.equip_no!=null ? 
-            <div> 
+            <div className='container-fluid'> 
                 <AssetData equip_no={this.state.equip_no}/> 
                 <SesnorData equip_no={this.state.equip_no}/> 
                 <AlarmData equip_no={this.state.equip_no}/> 
@@ -62,7 +62,7 @@ class Dropdown extends Component{
 
             }
             }>
-                <option value=''>Select Equiment Number</option>
+                <option value=''>Select Equiment</option>
                    { asset_data.map( (asset) => {
                         return(<option value={asset.EQUIP_NO} key={asset.EQUIP_NO} >{asset.EQUI_INFO}</option>)
                    } ) }
