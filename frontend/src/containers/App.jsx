@@ -16,7 +16,7 @@ class App extends Component {
        
         return(
             <div className='App'>
-                <h1>Veolia Water AquaVista Portal Demo</h1>
+                <h1>Veolia Water AquaVista Portal Demo POC 14.07.2018</h1>
 
                     
                     <Dropdown />
