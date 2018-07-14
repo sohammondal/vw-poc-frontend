@@ -1,5 +1,5 @@
 module.exports = {
-   tags : ['Vw-POC-TEST'],
+   tags : ['VW-POC-TEST'],
    'Testing started' : function(browser)
    {
        browser
