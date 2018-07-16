@@ -52,7 +52,8 @@ pipeline{
         }
         stage('Update CDN'){
             steps{
-                sh 'ansible-playbook ansible/update-cdn.yaml'
+                //sh 'ansible-playbook ansible/update-cdn.yaml'
+                sh 'python ansible/update-cdn.py'
             }
         }
     }

@@ -34,6 +34,7 @@ componentDidMount(){
     renderAssetData(){
         const { asset_data,isLoaded } = this.state;
         return (isLoaded ? 
+        <div className="table-responsive">
         <table className="table">
         <thead className="thead-dark table-name"><tr>
             <th></th>
@@ -93,7 +94,8 @@ componentDidMount(){
             }
            
         </tbody>
-        </table> : null)
+        </table> 
+        </div>: null)
         
 
     }

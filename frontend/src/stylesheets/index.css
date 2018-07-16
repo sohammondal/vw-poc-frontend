@@ -37,10 +37,12 @@
     color: red;
     padding: 1px;
     font-size: 0.8em;
+    float: left;
 
 }
 .no-data-alarm{
     top: 18px;
+    float: left;
 }
 
 .table{
