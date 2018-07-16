@@ -5,8 +5,8 @@ from datetime import datetime
 
 #cloudfront dristribution invalidation
 
-
-session = boto3.Session=(profile_name='VeoliaWaters')
+ 
+session = boto3.Session(profile_name='VeoliaWaters')
 cloudfront = boto3.session('cloudfront')
 
 
