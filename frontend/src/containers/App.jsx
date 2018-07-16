@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 // import { read_cookie } from 'sfcookies';
 // import avatar from '../img/img_avatar3.png'
 
-import AssetData from '../components/AssestData';
+// import AssetData from '../components/AssestData';
 import Dropdown  from '../components/Dropdown';
  
 class App extends Component {
