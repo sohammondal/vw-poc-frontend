@@ -24,7 +24,8 @@ class AlarmData extends Component{
 
     renderAlarmData(){
         const { alarm_data,isLoaded } = this.state;
-        return (isLoaded ? 
+        return (isLoaded ?
+        <div className="table-responsive">
         <table className="table">
         <thead className="thead-dark table-name"><tr>
             <th></th>
@@ -62,7 +63,8 @@ class AlarmData extends Component{
             }
            
         </tbody>
-        </table> : 
+        </table>
+        </div> : 
         <div className='no-data-alarm'>*There is no  alarm data for this equipment</div>
     )
         

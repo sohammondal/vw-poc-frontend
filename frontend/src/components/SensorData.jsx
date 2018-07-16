@@ -25,6 +25,7 @@ class SensorData extends Component{
     renderSensorData(){
         const { sensor_data,isLoaded } = this.state;
         return (isLoaded ? 
+        <div className="table-responsive">
         <table className="table">
         <thead className="thead-dark table-name"><tr>
             <th></th>
@@ -62,7 +63,8 @@ class SensorData extends Component{
             }
            
         </tbody>
-        </table> : 
+        </table>
+        </div> : 
         <div className='no-data-sensor'>*There is no sensor data for this equipment</div>
     )
         
