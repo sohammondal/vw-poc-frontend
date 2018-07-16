@@ -7,7 +7,7 @@ from datetime import datetime
 
  
 session = boto3.Session(profile_name='VeoliaWaters')
-cloudfront = boto3.session('cloudfront')
+cloudfront = session.client('cloudfront')
 
 
 distributions = ["E2RH2JBC3UI9WB","E6C5IVF7KYD9P"]
